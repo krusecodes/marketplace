@@ -1,5 +1,7 @@
+import Products from '../components/Products';
+
 export default function SellPage() {
   return <div>
-    <p>Hello!</p>
+    <Products />
   </div>
 }
