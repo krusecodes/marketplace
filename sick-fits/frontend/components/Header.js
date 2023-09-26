@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import Nav from './Nav';
+import Cart from './Cart';
+// import Search from './Search';
+// import useSearch from '../lib/useSearch';
 
 const Logo = styled.h1`
   font-size: 4rem;
@@ -34,17 +37,19 @@ const HeaderStyles = styled.header`
 `;
 
 export default function Header() {
+  // const [leagueData, onSearch] = useSearch(data, 'strLeague');
   return (
     <HeaderStyles>
       <div className="bar">
         <Logo>
-          <Link href="/">Sick fits</Link>
+          <Link href="/">Market</Link>
         </Logo>
         <Nav />
       </div>
-      <div className="sub-bar">
-        <p>Search</p>
-      </div>
+      {/* <div className="sub-bar">
+        <Search />
+      </div> */}
+      <Cart />
     </HeaderStyles>
   );
 }
